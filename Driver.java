@@ -9,7 +9,8 @@ public class Driver
 	private static User user;
 	private static board board;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		System.out.print("Enter the number of players (between 2 and 4): ");
 		System.out.println();
 		boolean inputCorrect = false;
@@ -138,7 +139,7 @@ public class Driver
 			System.out.println(user + " has rolled " + user.getNumberRolled() + 
 					". You can do one of the following: \n" + 
 					"\"To take a specific token out of the home circle type T followed by the token number (T 1 will move token 1 out of the home circle)\"\n" +
-					"\"To move a specific token type T followed by the token number (T 1 will move token 1)"); 
+					"\"To move a specific token type M followed by the token number (M 1 will move token 1)"); 
 
 			boolean turnComplete = false;
 			while(!turnComplete) 
@@ -152,8 +153,7 @@ public class Driver
 				{
 					if(!user.hasRolledSix()) 
 					{
-						System.out.println("Sorry, can't do that. Tokens can be taken out only " + 
-								"when a 6 has been rolled.");
+						System.out.println("Sorry, can't do that. Tokens can only be taken when a 6 is rolled.");
 						continue;
 					}
 
