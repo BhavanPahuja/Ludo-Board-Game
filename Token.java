@@ -1,4 +1,9 @@
 
+// The class Token handles the token's properties including the color, number and co-ordinates.
+//Since the class Token doesn't have a lot methods (going to move moveToken methods in Token in the future),
+//it only has getter and setter methods as of now.
+//https://github.com/DigiAshish/Java-Ludo-Game/blob/master/LudoGameHandler.java (line 1507-1563)
+
 public class Token 
 {
 	private int tokenNumber;

@@ -2,6 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+//Driver class is responsible for putting together all the classes and running the game.
+//This class contains the main method.
+
+// A lot of the code in Driver is derived from https://github.com/DigiAshish/Java-Ludo-Game/blob/master/LudoGameHandler.java (line 8-414)
+// It has been modified to work with multiple classes instead of one and has also been made more efficient by removing excess code.
+
 public class Driver
 {
 	private static String[] userColor = { "Green", "Yellow", "Red", "Blue" };

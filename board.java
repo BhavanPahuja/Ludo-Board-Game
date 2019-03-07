@@ -3,6 +3,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+//Code on how to print the board was taken from https://github.com/DigiAshish/Java-Ludo-Game/blob/master/LudoGameHandler.java (line 416-1439)
+//Driver is also responsible for checking and performing moves(to be moved to either Token or a new class later).
 public class board {
 
 
