@@ -1,5 +1,8 @@
-# Ludo Board Game
+# Descrition And How To Run
+
 Team Project (Group 14) 
+Ludo Board Game
+
 The purpose of the code is to create a functioning version of the board game Ludo in the console.
 
 Ludo is a strategy board game for two to four players, in which the players race their four tokens from start to finish according to the rolls of a single die.
