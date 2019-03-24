@@ -1,4 +1,4 @@
-# Descrition And How To Run
+# Description And How To Run
 
 Team Project (Group 14) 
 Ludo Board Game
