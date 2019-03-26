@@ -1,3 +1,4 @@
+package Ludo;
 //User controls the properties of the user/player itself like color of player, the tokens and the number rolled.
 //https://github.com/DigiAshish/Java-Ludo-Game/blob/master/LudoGameHandler.java (Line 1441-1505)
 // Again user doesn't have a lot of methods except for getter and setter methods and a method that checks if they rolled a six.

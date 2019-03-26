@@ -1,3 +1,5 @@
+package Ludo;
+import Ludo.TokenMethods;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -105,7 +107,7 @@ public class Driver
 
 		board = new board();
 		for(int i=0; i<userList.size(); i++)
-			board.initializeTokens(userList.get(i));
+			TokenMethods.initializeTokens(userList.get(i));
 		runGame();
 	}
 
@@ -134,7 +136,7 @@ public class Driver
 					continue;
 				}
 			}
-			boolean movesArePossible = board.movesArePossible(user, user.getNumberRolled());
+			boolean movesArePossible = Moves.movesArePossible(user, user.getNumberRolled());
 			if(!movesArePossible) 
 			{
 				System.out.println("Can't do anything.");
@@ -173,7 +175,7 @@ public class Driver
 					}
 
 					Token token = user.getToken(tokenNumber);
-					commandSuccessful = board.takeTokenOut(token);
+					commandSuccessful = TokenMethods.takeTokenOut(token);
 				} 
 				
 				else if(keyInput.equals("M")) 
@@ -188,7 +190,7 @@ public class Driver
 
 					Token token = user.getToken(tokenNumber);
 					int squareAmount = user.getNumberRolled();
-					commandSuccessful = board.moveToken(token, squareAmount);
+					commandSuccessful = TokenMethods.moveToken(token, squareAmount);
 				}
 				
 				else 

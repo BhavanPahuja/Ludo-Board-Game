@@ -1,3 +1,4 @@
+package Ludo;
 
 // The class Token handles the token's properties including the color, number and co-ordinates.
 //Since the class Token doesn't have a lot methods (going to move moveToken methods in Token in the future),
