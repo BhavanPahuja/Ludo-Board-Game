@@ -20,7 +20,7 @@ public class TokenTest
 	public void test_setColor_Green() 
 	{
 		String color = "green";
-		User.setColor("green");
+		Token.setColor("green");
 		assertEquals("Set color green" , color, Token.getColor());
 	}
 	
@@ -28,7 +28,7 @@ public class TokenTest
 	public void test_setColor_Blue() 
 	{
 		String color = "blue";
-		User.setColor("blue");
+		Token.setColor("blue");
 		assertEquals("Set color blue" , color, Token.getColor());
 	}
 	
@@ -36,7 +36,7 @@ public class TokenTest
 	public void test_setColor_Yellow() 
 	{
 		String color = "yellow";
-		User.setColor("yellow");
+		Token.setColor("yellow");
 		assertEquals("Set color yellow" , color, Token.getColor());
 	}
 	
@@ -53,7 +53,7 @@ public class TokenTest
 	public void test_setX_Negative2()
 	{
 		int x = -2;
-		Token.setX(2);
+		Token.setX(-2);
 		
 		assertEquals("Set x coordinate to -2" , x, Token.getX());
 	}
