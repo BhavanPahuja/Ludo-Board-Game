@@ -52,7 +52,7 @@ class Ludo extends JFrame {
 				Ludo.roll();
 				while (rollAgain == true) {
 					rollAgain = false;// Set to false imediatley
-					System.outAWTException
+					System.out
 							.println("Ludo:rollButton.addActionListener(): Roll again set to false");
 					System.out
 							.println("Ludo:rollButton.addActionListener(): Rolling Again, automatically");
@@ -138,7 +138,7 @@ class Ludo extends JFrame {
 		displayValue = turnValue + 1;
 		rollView.setText("Turn: Player " + displayValue + ";    Dice Roll: ");
 		System.out.println("\n\nLudo:getNextTurn(): Player "
-				+ displayValue);AWTException
+				+ displayValue);
 	}
 
 	/*
@@ -210,7 +210,7 @@ class Ludo extends JFrame {
 		gameFrame.dispose();
 		gameFrame = new Ludo();
 	}
-	AWTException
+
 	public static void PlayAI() throws AWTException {
 		Robot bot = new Robot();
 		try {
