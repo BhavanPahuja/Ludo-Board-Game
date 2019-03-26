@@ -4,7 +4,7 @@ package Ludo;
 import java.util.Random;
 public class Dice 
 {
-	int roll() 
+	static int roll() 
 	{
 		return new Random().nextInt(6) + 1;
 	}

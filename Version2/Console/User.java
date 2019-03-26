@@ -5,7 +5,7 @@ package Ludo;
 // Code has been modified to work with multiple classes.
 public class User 
 {
-	private String color;
+	private static String color;
 	private int numberRolled;
 	private boolean hasRolledSix;
 	private Token[] token;
@@ -32,7 +32,7 @@ public class User
 		return token[tokenNumber];
 	}
 	
-	String getColor() 
+	static String getColor() 
 	{
 		return color;
 	}
@@ -59,5 +59,10 @@ public class User
 			if(!token[i].isCompleted())
 				return false;
 		return true;	
+	}
+
+	public static void setColor(String string) {
+		color = string;
+		
 	}
 }

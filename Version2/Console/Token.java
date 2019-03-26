@@ -8,11 +8,11 @@ package Ludo;
 public class Token 
 {
 	private int tokenNumber;
-	private int xCoord;
-	private int yCoord;
-	private String color;
-	private boolean takenOut;
-	private boolean completed;
+	private static int xCoord;
+	private static int yCoord;
+	private static String color;
+	private static boolean takenOut;
+	private static boolean completed;
 	
 	Token(int tokenNumber, String color) 
 	{
@@ -20,53 +20,58 @@ public class Token
 		this.color = color;
 	}
 	
-	String getColor() 
+	static String getColor() 
 	{
 		return color;
 	}
 		
-	int getX() 
+	static int getX() 
 	{
 		return xCoord;
 	}
 	
-	int getY() 
+	static int getY() 
 	{
 		return yCoord;
 	}
 	
-	void setX(int x) 
+	static void setX(int x) 
 	{
 		xCoord = x;
 	}
 	
-	void setY(int y) 
+	static void setY(int y) 
 	{
 		yCoord = y;
 	}
 	
-	void setTakenOut(boolean mode) 
+	static void setTakenOut(boolean mode) 
 	{
 		takenOut = mode;
 	}
 	
-	boolean isTakenOut() 
+	static boolean isTakenOut() 
 	{
 		return takenOut;
 	}
 	
-	void setCompleted(boolean mode) 
+	static void setCompleted(boolean mode) 
 	{
 		completed = mode;
 	}
 	
-	boolean isCompleted() 
+	static boolean isCompleted() 
 	{
 		return completed;
 	}
 
 	public int getTokenNumber() {
 		return tokenNumber;
+	}
+
+	public static void setColor(String string) {
+		color = string;
+		
 	}
 
 }
