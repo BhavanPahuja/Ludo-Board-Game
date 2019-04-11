@@ -1,14 +1,7 @@
 package Ludo;
-import Ludo.TokenMethods;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-//Driver class is responsible for putting together all the classes and running the game.
-//This class contains the main method.
-
-// A lot of the code in Driver is derived from https://github.com/DigiAshish/Java-Ludo-Game/blob/master/LudoGameHandler.java (line 8-414)
-// It has been modified to work with multiple classes instead of one and has also been made more efficient by removing excess code.
 
 public class Driver
 {
@@ -107,7 +100,7 @@ public class Driver
 
 		board = new board();
 		for(int i=0; i<userList.size(); i++)
-			TokenMethods.initializeTokens(userList.get(i));
+			board.initializeTokens(userList.get(i));
 		runGame();
 	}
 
@@ -136,7 +129,7 @@ public class Driver
 					continue;
 				}
 			}
-			boolean movesArePossible = Moves.movesArePossible(user, user.getNumberRolled());
+			boolean movesArePossible = board.movesArePossible(user, user.getNumberRolled());
 			if(!movesArePossible) 
 			{
 				System.out.println("Can't do anything.");
@@ -175,7 +168,7 @@ public class Driver
 					}
 
 					Token token = user.getToken(tokenNumber);
-					commandSuccessful = TokenMethods.takeTokenOut(token);
+					commandSuccessful = board.takeTokenOut(token);
 				} 
 				
 				else if(keyInput.equals("M")) 
@@ -190,7 +183,7 @@ public class Driver
 
 					Token token = user.getToken(tokenNumber);
 					int squareAmount = user.getNumberRolled();
-					commandSuccessful = TokenMethods.moveToken(token, squareAmount);
+					commandSuccessful = board.moveToken(token, squareAmount);
 				}
 				
 				else 
