@@ -6,37 +6,38 @@ import org.junit.Test;
 
 public class UserTest 
 {
+	User u = new User("Blue");
 
 	@Test
 	public void test_setColor_Red() 
 	{
 		String color = "red";
-		User.setColor("red");
-		assertEquals("Set color red" , color, User.getColor());
+		u.setColor("red");
+		assertEquals("Set color red" , color, u.getColor());
 	}
 	
 	@Test
 	public void test_setColor_Green() 
 	{
 		String color = "green";
-		User.setColor("green");
-		assertEquals("Set color green" , color, User.getColor());
+		u.setColor("green");
+		assertEquals("Set color green" , color, u.getColor());
 	}
 	
 	@Test
 	public void test_setColor_Blue() 
 	{
 		String color = "blue";
-		User.setColor("blue");
-		assertEquals("Set color blue" , color, User.getColor());
+		u.setColor("blue");
+		assertEquals("Set color blue" , color, u.getColor());
 	}
 	
 	@Test
 	public void test_setColor_Yellow() 
 	{
 		String color = "yellow";
-		User.setColor("yellow");
-		assertEquals("Set color yellow" , color, User.getColor());
+		u.setColor("yellow");
+		assertEquals("Set color yellow" , color, u.getColor());
 	}
 	
 

@@ -5,13 +5,15 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class DiceTest {
+public class DiceTest 
+{
+	Dice d = new Dice();
 
 	@Test
 	public void test_DiceNumberBetween1And6()
 	{
 		boolean ret = false;
-		if(Dice.roll()>=1 && Dice.roll()<=6)
+		if(d.roll()>=1 && d.roll()<=6)
 			ret = true;
 		else
 			ret = false;
